@@ -1,3 +1,4 @@
+# Packages in boxkit
 age
 atuin
 btop
@@ -28,3 +29,7 @@ vimdiff
 wl-clipboard
 zellij
 zstd
+
+# cosmic packages
+dnf-plugins-core
+@cosmic-desktop-environment
