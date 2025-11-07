@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    paths-ignore: # don't rebuild on documentation change
-      - '**.md'
     paths:
       - "ContainerFiles/boxkit"
       - "scripts/boxkit*"
