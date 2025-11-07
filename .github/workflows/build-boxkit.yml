@@ -4,11 +4,21 @@ on:
   pull_request:
     branches:
       - main
+    paths-ignore: # don't rebuild on documentation change
+      - '**.md'
+    paths:
+      - "ContainerFiles/boxkit"
+      - "scripts/boxkit*"
+      - "packages/boxkit*"
   push:
     branches:
       - main
     paths-ignore: # don't rebuild on documentation change
       - '**.md'
+    paths:
+      - "ContainerFiles/boxkit"
+      - "scripts/boxkit*"
+      - "packages/boxkit*"
   schedule:
     - cron: '0 0 * * TUE'
 
