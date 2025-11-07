@@ -11,5 +11,5 @@ COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/fedora-cosmic.packages /
 
 # Run the setup scripts
-RUN chmod +x fedora-example.sh distrobox-shims.sh && /fedora-cosmic.sh
+RUN chmod +x fedora-cosmic.sh distrobox-shims.sh && /fedora-cosmic.sh
 RUN rm /fedora-cosmic.sh /distrobox-shims.sh /fedora-cosmic.packages
